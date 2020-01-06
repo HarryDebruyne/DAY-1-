@@ -1,0 +1,107 @@
+#pragma warning(disable:4996)// 옛날 방식으로 짜도 돌아가게 함
+#include<stdio.h>
+get_num()
+{
+	return 5;
+ }
+
+max_num(int c, int d)
+{
+	if (c < d)
+	{
+		return d;
+
+	}
+	else if (c > d)
+	{
+		return c;
+	}
+	else if (c = d)
+		return 0;
+
+}
+
+put_max(int a)
+{
+	printf("%d", a);
+}
+main()
+{
+	int a, b;
+	a = get_num();
+	b = get_num();
+	int max;
+	max = max_num(a,b);
+	put_max(max);
+}
+/*
+int square(int b)
+{
+	return b*b;
+}
+main()
+{
+	int a = 10;
+	a = square(a);
+	printf("%d\n", a);
+}
+/*
+void put_num(int b) // 형식매개변수(b) : formal parameter
+{
+	printf("%d\n", b);
+}
+
+main()
+{
+	int a = 100;
+	printf("%d\n", a);
+	put_num(a); // 함수호출 + 실매개변수(a)
+
+}
+/*
+get_age()
+{
+	int age;
+	printf("당신의 나이를 입력하시오\n");
+	scanf("%d", &age);
+	printf("당신으 나이는 %d", age);
+
+}
+
+main()
+{
+	get_age();
+}
+/*
+
+int get_num()  // int 나가는 통로 get_num함수명 ()
+{
+	int b = 40;
+	return b;
+	//return 40;
+}
+
+main()
+{
+	int a = 10;
+	printf("%d\n", a);
+	
+	a = 20;
+	printf("%d\n", a);
+
+	scanf("%d", &a); //표준입력함수를 사요하여 a 의 주소에 키보드로 십진수를 넣는다~
+	printf("%d\n", a);
+	
+	a = get_num();
+	printf("%d\n", a);
+}
+
+//box(); // 함수의 선언 prototype 
+//box()
+//{
+//printf("gloves\n");// 개행문자를 써야함 \n
+//	puts("gloves");// 자동으로 개행문자 출력
+//	puts("gloves");
+//	puts("gloves");
+//	puts("gloves");
+//	puts("gloves");
