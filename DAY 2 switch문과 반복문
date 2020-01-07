@@ -1,0 +1,101 @@
+#pragma warning(disable:4996)// 옛날 방식으로 짜도 돌아가게 함
+#include<stdio.h>
+
+
+
+
+main()
+{
+    int a;
+    int small, big;
+    
+    
+    scanf("%d %d", &small, &big);
+    
+    if (small > big)
+    {
+        int t;
+        t = small;
+        small = big;
+        big = t;
+    }
+
+
+}
+
+
+
+/*
+main() {
+    int a = 0;
+    int b = 0;
+    while (a < 10)
+    {
+
+        if (a % 2 == 0)
+         
+        b = b + a;
+        a++;
+    }
+    printf("%d", b);
+}
+
+/*
+main() {
+    int a =0;
+    while (a <10)
+    {      
+            
+        if (a%2 ==1)
+            printf("%d", a);
+        a++;
+    }
+}
+/*
+main()
+{
+    int a = 0;
+    int b = 0; 
+    while (a < 10)
+    {
+        a++;
+        b = b + a;
+        
+      
+    }
+    printf("%d", b);
+}
+
+
+
+
+/*
+main()
+{
+    int a = 0;
+    while (a < 10)
+    {
+        printf("%d", a);
+        a++;
+    }
+}
+/*
+
+main() {
+
+    int input; 
+    scanf("%d", &input);
+    switch (input) {
+    case 'A':
+        printf("input의 값은 A입니다.");
+        break;
+    case 'B':
+        printf("input의 값은 B입니다.");
+        break;
+    default:
+        printf("input의 값은 A과B가 아닌 다른 문자입니다.");
+    }
+
+}
+
+*/
