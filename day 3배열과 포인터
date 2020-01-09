@@ -1,7 +1,18 @@
 
 #include<stdio.h>
 
+main()
+{
+	int a;
+	scanf("%d", &a);
 
+	int* p;
+	p = &a;
+	
+	scanf("%d", p);
+
+	printf("%d\n", *p);
+}
 
 
 
